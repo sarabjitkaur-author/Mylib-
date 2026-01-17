@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Library</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    .library-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .card {
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card h3 {
+        margin-bottom: 0.5rem;
+        color: #222;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    .card a {
+        display: inline-block;
+        margin-top: 1rem;
+        text-decoration: none;
+        color: #4CAF50;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 2rem;
+        background-color: #333;
+        color: #fff;
+        margin-top: 3rem;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Personal Library</h1>
+    <p>Books and Blogs by Sarabjit Kaur</p>
+</header>
+
+<div class="container">
+
+    <!-- Books Section -->
+    <section>
+        <h2>Books</h2>
+        <div class="library-grid">
+            <div class="card">
+                <h3>Visit My Books</h3>
+                <p>Explore my published books on Notion Press</p>
+                <a href="https://notionpress.com/author/968992" target="_blank">
+                    View Books on Notion Press
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section style="margin-top: 3rem;">
+        <h2>Blogs</h2>
+        <div class="library-grid">
+            <div class="card">
+                <h3>Visit My Blogs</h3>
+                <p>Read my articles and learning journeys on Blogger</p>
+                <a href="https://www.blogger.com/profile/01836877362985086170" target="_blank">
+                    View Blogs on Blogger
+                </a>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2026 Sarabjit Kaur | Hosted on GitHub Pages
+</footer>
+
+</body>
+</html>
